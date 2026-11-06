@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" role="img" aria-labelledby="title desc">
 <title id="title">从资料与原话到可复核的报告</title>
-<desc id="desc">资料与原话先整理为候选，经人员确认和核验后进入规则检查与辅助测算。合格结果形成带来源的报告初稿，缺项则列出待补清单并可形成无额度初稿。</desc>
+<desc id="desc">资料与原话先整理为候选，经人员确认和核验后进入场景规则检查。结果形成带来源的文档初稿，缺项保留为待补清单。</desc>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#247888"/></marker></defs>
 <rect width="1000" height="450" fill="#f7fbfc"/>
 <g fill="none" stroke="#247888" stroke-width="2" marker-end="url(#arrow)">
 <path d="M280 115H390"/><path d="M610 115H720"/><path d="M830 165V235H500V285"/><path d="M610 330H720"/><path d="M390 330H280"/><path d="M170 375V415H830V375"/>
 </g>
 <g font-family="Microsoft YaHei,PingFang SC,sans-serif" fill="#1b5360" font-size="17" text-anchor="middle">
-<text x="335" y="100">整理</text><text x="665" y="100">交由人员核对</text><text x="655" y="222">核验输入与来源</text><text x="665" y="316">条件满足</text><text x="335" y="316">存在缺项</text><text x="500" y="405">保留缺口，生成无额度初稿</text>
+<text x="335" y="100">整理</text><text x="665" y="100">交由人员核对</text><text x="655" y="222">核验输入与来源</text><text x="665" y="316">条件满足</text><text x="335" y="316">存在缺项</text><text x="500" y="405">保留缺口，形成待补初稿</text>
 </g>
 <g font-family="Microsoft YaHei,PingFang SC,sans-serif" text-anchor="middle">
 <g fill="#fff" stroke="#5b858e" stroke-width="1.5"><rect x="60" y="70" width="220" height="95" rx="4"/><rect x="390" y="70" width="220" height="95" rx="4"/><rect x="720" y="70" width="220" height="95" rx="4"/><rect x="390" y="285" width="220" height="90" rx="4"/><rect x="720" y="285" width="220" height="90" rx="4"/><rect x="60" y="285" width="220" height="90" rx="4" stroke-dasharray="6 4"/></g>
-<g fill="#16343c" font-size="23" font-weight="600"><text x="170" y="108">资料与原话</text><text x="500" y="108">答案候选与补问</text><text x="830" y="108">人员确认与核验</text><text x="500" y="323">规则检查与测算</text><text x="830" y="323">报告初稿</text><text x="170" y="323">待补清单</text></g>
-<g fill="#49626a" font-size="16"><text x="170" y="140">保留来源与期间</text><text x="500" y="140">AI或人工辅助整理</text><text x="830" y="140">记录准确与事实核验分开</text><text x="500" y="352">按版本记录输入和轨迹</text><text x="830" y="352">复核后选择版本导出</text><text x="170" y="352">不自动补造结论</text></g>
+<g fill="#16343c" font-size="23" font-weight="600"><text x="170" y="108">资料与原话</text><text x="500" y="108">答案候选与补问</text><text x="830" y="108">人员确认与核验</text><text x="500" y="323">场景规则检查</text><text x="830" y="323">报告初稿</text><text x="170" y="323">待补清单</text></g>
+<g fill="#49626a" font-size="16"><text x="170" y="140">保留来源与期间</text><text x="500" y="140">AI或人工辅助整理</text><text x="830" y="140">记录准确与事实核验分开</text><text x="500" y="352">按场景适配规则与模板</text><text x="830" y="352">复核后选择版本导出</text><text x="170" y="352">不自动补造结论</text></g>
 </g></svg>
