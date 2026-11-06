@@ -1,0 +1,31 @@
+/* prominent credit-result hero for the report page (gauge + big limit) */
+.ch-hero{position:relative;display:flex;align-items:center;gap:22px;flex-wrap:wrap;overflow:hidden;
+  border-radius:16px;padding:22px 26px;margin:14px 0 6px;
+  background:linear-gradient(115deg,#0e3a4a 0%,#116a5e 45%,#3d2f7a 100%);color:#fff;
+  box-shadow:0 10px 28px #0e3a4a40;animation:ch-rise .55s ease-out both}
+@keyframes ch-rise{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.ch-hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(600px 160px at 18% 0%,#ffffff2e,transparent 60%),
+             radial-gradient(420px 140px at 88% 110%,#7a5cff33,transparent 65%)}
+.ch-glow{position:absolute;inset:auto -30% -60% auto;width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle,#27ae7c33,transparent 65%);filter:blur(6px);
+  animation:ch-breathe 3.2s ease-in-out infinite}
+@keyframes ch-breathe{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+.ch-gauge{position:relative;width:104px;height:104px;flex:none}
+.ch-gauge svg{width:100%;height:100%}
+.ch-track{fill:none;stroke:#ffffff26;stroke-width:9}
+.ch-arc{fill:none;stroke-width:9;stroke-linecap:round;transition:stroke-dasharray 1s cubic-bezier(.22,.9,.35,1)}
+.ch-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}
+.ch-center strong{font-size:28px;font-weight:800;text-shadow:0 2px 8px #0006}
+.ch-center span{font-size:10px;color:#cfe8e2}
+.ch-limit{display:flex;flex-direction:column;gap:4px;min-width:0}
+.ch-eyebrow{font-size:11px;letter-spacing:2px;color:#a8d8cd}
+.ch-amount{font-size:40px;font-weight:800;line-height:1.05;
+  background:linear-gradient(92deg,#eafff7,#9fe8ff 55%,#cabfff);-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:ch-shine 2.6s ease-in-out infinite}
+@keyframes ch-shine{0%,100%{filter:brightness(1)}50%{filter:brightness(1.18)}}
+.ch-amount i{font-style:normal;font-size:20px;margin-right:3px}
+.ch-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12px;color:#cfe8e2}
+.ch-rating{display:inline-flex;align-items:center;gap:5px;font-weight:600;color:#ffe9a8}
+@media (max-width:560px){.ch-hero{padding:16px}.ch-amount{font-size:30px}.ch-gauge{width:84px;height:84px}}
+@media (prefers-reduced-motion: reduce){.ch-hero,.ch-glow,.ch-amount{animation:none}}

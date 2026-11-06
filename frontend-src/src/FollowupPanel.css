@@ -1,0 +1,41 @@
+.due-diligence-shell .fu-panel { min-width:0; padding:20px; border:1px solid var(--dd-line); border-radius:10px; background:#fff; }
+.due-diligence-shell .fu-heading { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+.due-diligence-shell .fu-heading h3 { display:flex; align-items:center; gap:8px; color:var(--dd-ink); font-size:16px; }
+.due-diligence-shell .fu-heading p { color:var(--dd-muted); font-size:11px; margin-top:6px; line-height:1.8; }
+.due-diligence-shell .fu-heading > button { padding:7px; min-width:34px; min-height:34px; }
+.due-diligence-shell .fu-ai { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:17px 0; padding:11px 12px; background:#f0f7f7; border-radius:7px; }
+.due-diligence-shell .fu-ai > div { display:flex; align-items:center; gap:6px; flex:1; min-width:140px; font-size:11px; color:#356c67; }
+.due-diligence-shell .fu-ai > p { width:100%; color:var(--dd-muted); font-size:10px; line-height:1.7; }
+.due-diligence-shell .fu-ai button { padding:5px 8px; min-height:29px; font-size:10px; }
+.due-diligence-shell .fu-active { display:grid; gap:12px; }
+.due-diligence-shell .fu-card { min-width:0; padding:14px; border:1px solid #d7e7e7; border-radius:8px; background:#fbfefe; }
+.due-diligence-shell .fu-card-meta { display:flex; align-items:center; justify-content:space-between; gap:10px; color:#37736d; font-size:10px; margin-bottom:9px; }
+.due-diligence-shell .fu-card-meta > span { display:flex; align-items:center; gap:4px; }
+.due-diligence-shell .fu-card-meta > small { flex-shrink:0; color:var(--dd-muted); }
+.due-diligence-shell .fu-card h4 { margin:0; font-size:13px; line-height:1.8; font-weight:600; overflow-wrap:anywhere; }
+.due-diligence-shell .fu-reason { margin-top:7px; color:var(--dd-muted); font-size:11px; line-height:1.8; }
+.due-diligence-shell .fu-sources { margin-top:10px; font-size:10px; }
+.due-diligence-shell .fu-sources summary { display:flex; align-items:center; gap:5px; width:max-content; cursor:pointer; color:#367a80; }
+.due-diligence-shell .fu-sources ul { list-style:none; margin:8px 0 0; padding:0; display:grid; gap:7px; }
+.due-diligence-shell .fu-sources li { display:flex; flex-direction:column; gap:3px; padding:8px; background:#eef6f6; overflow-wrap:anywhere; }
+.due-diligence-shell .fu-sources li strong { font-weight:500; }.due-diligence-shell .fu-sources li small { color:var(--dd-muted); font-size:9px; }
+.due-diligence-shell .fu-card-actions { display:flex; flex-wrap:wrap; gap:6px; margin-top:11px; }
+.due-diligence-shell .fu-card-actions button,.due-diligence-shell .fu-restore { min-height:30px; padding:5px 8px; font-size:10px; }
+.due-diligence-shell .fu-card-actions button:first-child { color:#246a63; border-color:#bfded9; background:#eaf6f3; }
+.due-diligence-shell .fu-restore { margin-top:10px; }
+.due-diligence-shell .fu-edit-label { display:block; font-size:11px; color:var(--dd-muted); }
+.due-diligence-shell .fu-edit-label textarea { box-sizing:border-box; margin-top:6px; padding:9px; min-height:90px; width:100%; border:1px solid var(--dd-line); border-radius:6px; font-family:inherit; font-size:12px; line-height:1.7; color:var(--dd-ink); background:#fff; resize:vertical; }
+.due-diligence-shell .fu-message { display:flex; align-items:flex-start; gap:6px; color:#3d7067; background:#f0f8f4; padding:9px; border-radius:6px; font-size:11px; margin:10px 0; }
+.due-diligence-shell .fu-message.fu-error { color:#94484d; background:#fff3f3; }
+.due-diligence-shell .fu-message svg { flex-shrink:0; margin-top:2px; }
+.due-diligence-shell .fu-empty { font-size:11px; color:var(--dd-muted); padding:15px 3px; line-height:1.9; }
+.due-diligence-shell .fu-history { margin-top:14px; padding-top:12px; border-top:1px solid var(--dd-line); }
+.due-diligence-shell .fu-history > summary { cursor:pointer; font-size:11px; color:var(--dd-muted); }
+.due-diligence-shell .fu-history .fu-card { margin-top:9px; }
+.due-diligence-shell .fu-stale { opacity:.75; background:#f5f7f8; }
+.due-diligence-shell .fu-material-note { margin-top:9px; font-size:11px; color:var(--dd-muted); line-height:1.8; }
+.due-diligence-shell .fu-materials { list-style:none; padding:0; margin:8px 0 0; }
+.due-diligence-shell .fu-materials li { padding:7px 0; font-size:11px; display:flex; justify-content:space-between; gap:9px; }
+.due-diligence-shell .fu-materials strong { font-weight:500; }.due-diligence-shell .fu-materials small { color:var(--dd-muted); }
+.due-diligence-shell .fu-panel > footer { margin-top:17px; color:var(--dd-muted); font-size:10px; line-height:1.8; }
+@media(max-width:600px) { .due-diligence-shell .fu-panel { padding:15px; } .due-diligence-shell .fu-card { padding:12px; } }

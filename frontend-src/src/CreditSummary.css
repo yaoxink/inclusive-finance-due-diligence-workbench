@@ -1,0 +1,77 @@
+/* credit summary: prominent limit hero + indicator grid (all vector/CSS, no assets) */
+.cs-summary{display:flex;flex-direction:column;gap:14px}
+.cs-empty{display:flex;align-items:center;gap:8px;color:#5f7d8c;font-size:13px;padding:14px}
+.cs-hero{display:flex;align-items:center;gap:26px;padding:22px 28px;border-radius:18px;
+  border:1px solid #bfe0d8;position:relative;overflow:hidden;
+  background:linear-gradient(115deg,#f2fbf7 0%,#e9f4ff 52%,#f4effe 100%)}
+.cs-hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(420px 140px at 12% 0%,rgba(12,118,154,.08),transparent 70%),
+             radial-gradient(420px 160px at 88% 100%,rgba(122,92,255,.08),transparent 70%)}
+.cs-gauge{position:relative;width:132px;height:132px;flex:0 0 132px}
+.cs-gauge svg{width:100%;height:100%}
+.cs-gauge-track{fill:none;stroke:#e2edf3;stroke-width:10}
+.cs-gauge-arc{fill:none;stroke-width:10;stroke-linecap:round;
+  transition:stroke-dasharray 1.1s cubic-bezier(.25,.7,.3,1);filter:drop-shadow(0 0 6px rgba(12,118,154,.35))}
+.cs-gauge-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}
+.cs-gauge-center strong{font-size:34px;font-weight:800;line-height:1;color:#123c4e;
+  font-variant-numeric:tabular-nums;animation:cs-rise .5s .15s both}
+.cs-gauge-center span{font-size:11px;color:#5f7d8c;margin-top:2px}
+.cs-limit{display:flex;flex-direction:column;gap:4px;min-width:0}
+.cs-limit-eyebrow{font-size:12px;letter-spacing:2px;color:#4d7488}
+.cs-limit-amount{font-size:44px;font-weight:800;color:#0d3a4e;line-height:1.05;letter-spacing:.5px;
+  font-variant-numeric:tabular-nums;animation:cs-rise .55s .25s both;
+  text-shadow:0 2px 14px rgba(12,118,154,.18)}
+.cs-limit-amount i{font-style:normal;font-size:26px;margin-right:4px;color:#0c769a}
+@keyframes cs-rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.cs-limit-meta{display:flex;align-items:center;gap:12px;margin-top:4px;flex-wrap:wrap}
+.cs-rating{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:700;color:#0f6d4d;
+  background:#e2f6ec;border:1px solid #bfe7d4;border-radius:999px;padding:4px 12px}
+.cs-limit-meta>span:last-child{font-size:11px;color:#7b98a6}
+.cs-hero-blocked{gap:14px;color:#5f7d8c}
+.cs-hero-blocked strong{font-size:15px;color:#8a5300}
+.cs-hero-blocked p{margin:2px 0 0;font-size:12px}
+.cs-hero-blocked button{margin-left:auto;border:1px solid #c9d8e0;background:#fff;border-radius:9px;
+  padding:7px 14px;font-size:13px;cursor:pointer;color:#123c4e;flex:0 0 auto}
+.cs-recheck{display:flex;align-items:center;gap:7px;margin:0;padding:8px 12px;border-radius:10px;
+  background:#fff8e1;border:1px solid #f0d9a8;color:#8a6d00;font-size:12px}
+.cs-indicators{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.cs-indicator{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #dbe6ed;
+  border-radius:13px;padding:11px 13px;transition:border-color .15s, transform .15s}
+.cs-indicator:hover{border-color:#9dc4d6;transform:translateY(-1px)}
+.cs-indicator svg{color:#0c769a;flex:0 0 auto}
+.cs-indicator span{font-size:11px;color:#648195;display:block}
+.cs-indicator strong{font-size:15px;color:#123c4e;font-variant-numeric:tabular-nums}
+.cs-indicator small{font-size:11px;color:#8ba0ad;font-weight:400}
+@media (max-width:860px){
+  .cs-hero{flex-direction:column;text-align:center;gap:14px;padding:18px}
+  .cs-limit{align-items:center}
+  .cs-indicators{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
+}
+@media (prefers-reduced-motion: reduce){
+  .cs-gauge-arc{transition:none}
+  .cs-limit-amount,.cs-gauge-center strong{animation:none}
+}
+
+/* one-click limit generation hero (report page): gold coin + step track */
+.cs-generating{display:flex;align-items:center;gap:16px;padding:22px 24px;
+  border:1px solid #e6cfa0;border-radius:14px;overflow:hidden;position:relative;
+  background:linear-gradient(100deg,#fffaf0,#fdf6e3 55%,#fffaf0)}
+.cs-generating::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(105deg,transparent 30%,#fff8 46%,#fffb 50%,#fff8 54%,transparent 70%);
+  transform:translateX(-100%);animation:ab-limit-shine 1.8s ease-in-out infinite}
+.ab-limit-coin{position:relative;width:44px;height:44px;flex:none;border-radius:50%;
+  background:radial-gradient(circle at 32% 28%,#ffe9b8,#f4c569 55%,#d99a2b);
+  box-shadow:0 3px 10px #d99a2b66,inset 0 0 0 2px #fff6;display:flex;align-items:center;justify-content:center}
+.ab-limit-coin::before{content:"";position:absolute;inset:-6px;border-radius:50%;
+  border:2px dashed #d9a13f;animation:ab-limit-orbit 3.2s linear infinite}
+@keyframes ab-limit-orbit{to{transform:rotate(360deg)}}
+.ab-limit-coin i{font-style:normal;font-weight:800;font-size:20px;color:#7a5200;animation:ab-limit-pop 1.4s ease-in-out infinite}
+@keyframes ab-limit-pop{0%,100%{transform:scale(1)}50%{transform:scale(1.22)}}
+.cs-generating-copy{display:flex;flex-direction:column;gap:4px}
+.cs-generating-copy strong{font-size:15px;color:#6b4a00}
+.cs-generating-copy small{font-size:12px;color:#9a7326}
+.ab-limit-track{display:flex;gap:5px;margin-top:4px}
+.ab-limit-track i{width:34px;height:5px;border-radius:3px;background:#ecd9ae;transition:background .3s}
+.ab-limit-track i.on{background:linear-gradient(90deg,#e9b64f,#c98d1d)}
+@keyframes ab-limit-shine{to{transform:translateX(100%)}}
+@media (prefers-reduced-motion: reduce){.cs-generating::after,.ab-limit-coin::before,.ab-limit-coin i{animation:none}}

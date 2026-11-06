@@ -1,0 +1,81 @@
+.due-diligence-shell .rw-workspace { min-width:0; }
+.due-diligence-shell .rw-toolbar { display:flex; justify-content:space-between; align-items:flex-start; gap:20px; margin-bottom:18px; }
+.due-diligence-shell .rw-toolbar h2 { font-size:21px; line-height:1.5; }
+.due-diligence-shell .rw-toolbar p,.due-diligence-shell .rw-cover-help { color:var(--dd-muted); font-size:12px; margin-top:7px; }
+.due-diligence-shell .rw-actions { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.due-diligence-shell .rw-actions button { white-space:nowrap; font-size:12px; }
+.due-diligence-shell .rw-message { display:flex; align-items:flex-start; gap:8px; border:1px solid #cfe5db; background:#f0f9f4; color:#2d6c55; padding:11px 13px; margin:12px 0; border-radius:7px; font-size:12px; }
+.due-diligence-shell .rw-message svg { flex-shrink:0; margin-top:2px; }
+.due-diligence-shell .rw-message.error { border-color:#e7cbd0; background:#fff3f4; color:#8f3949; }
+.due-diligence-shell .rw-message.warning { border-color:#e5d8b7; background:#fffbf0; color:#78602b; }
+.due-diligence-shell .rw-cover-section { border-bottom:1px solid var(--dd-line); padding-bottom:20px; margin-bottom:20px; }
+.due-diligence-shell .rw-cover-section > summary { cursor:pointer; color:var(--dd-ink); font-size:14px; font-weight:600; padding:10px 0; }
+.due-diligence-shell .rw-cover-help { margin-bottom:18px; }
+.due-diligence-shell .rw-meta-line { display:flex; gap:8px 22px; flex-wrap:wrap; font-size:11px; color:var(--dd-muted); margin:18px 0; }
+.due-diligence-shell .rw-version-bar { display:flex; align-items:center; flex-wrap:wrap; gap:10px; padding:15px; background:#fff; border:1px solid var(--dd-line); border-radius:9px; margin:15px 0; }
+.due-diligence-shell .rw-version-bar > label { display:flex; align-items:center; flex:1; gap:12px; min-width:220px; font-size:12px; }
+.due-diligence-shell .rw-version-bar select { margin:0; flex:1; max-width:430px; font-size:12px; }
+.due-diligence-shell .rw-version-bar button { font-size:11px; }
+.due-diligence-shell .rw-report-heading { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; padding:22px 0; }
+.due-diligence-shell .rw-report-heading h3 { font-size:21px; }
+.due-diligence-shell .rw-report-heading p { color:var(--dd-muted); font-size:12px; margin-top:7px; }
+.due-diligence-shell .rw-report-heading > span { border:1px solid #d9d2bd; color:#7a653c; padding:5px 9px; white-space:nowrap; font-size:11px; }
+.due-diligence-shell .rw-document { background:#fff; border:1px solid var(--dd-line); padding:20px 24px; }
+.due-diligence-shell .rw-chapter { padding:10px 0 22px; }
+.due-diligence-shell .rw-chapter + .rw-chapter { border-top:1px solid var(--dd-line); padding-top:23px; }
+.due-diligence-shell .rw-chapter > header { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:13px; }
+.due-diligence-shell .rw-chapter > header h3 { font-size:17px; }
+.due-diligence-shell .rw-chapter > header button { font-size:11px; min-height:30px; padding:5px 8px; }
+.due-diligence-shell .rw-chapter-text { font-size:12px; line-height:1.9; color:var(--dd-muted); }
+.due-diligence-shell .rw-table-block { margin:8px 0; border:1px solid #e1e9ed; }
+.due-diligence-shell .rw-table-block > summary { display:flex; align-items:center; justify-content:space-between; gap:12px; cursor:pointer; padding:10px 12px; font-size:12px; background:#f7fafb; }
+.due-diligence-shell .rw-table-block > summary span { font-size:10px; color:var(--dd-muted); font-weight:400; }
+.due-diligence-shell .rw-table-block strong { font-weight:500; }
+.due-diligence-shell .rw-table-scroll { overflow-x:auto; }
+.due-diligence-shell .rw-table-block table { width:100%; min-width:540px; border-collapse:collapse; font-size:11px; table-layout:fixed; }
+.due-diligence-shell .rw-table-block th { text-align:left; font-size:10px; font-weight:500; color:var(--dd-muted); background:#fff; padding:8px 10px; border-bottom:1px solid #e2e9ed; }
+.due-diligence-shell .rw-table-block th:nth-child(1) { width:22%; }
+.due-diligence-shell .rw-table-block th:nth-child(2) { width:28%; }
+.due-diligence-shell .rw-table-block th:nth-child(3) { width:32%; }
+.due-diligence-shell .rw-table-block td { vertical-align:top; padding:10px; border-bottom:1px solid #eef2f5; overflow-wrap:anywhere; font-variant-numeric:tabular-nums; }
+.due-diligence-shell .rw-table-block small { display:block; color:var(--dd-muted); line-height:1.8; margin-top:4px; }
+.due-diligence-shell .rw-gap { color:var(--dd-muted); }
+.due-diligence-shell .rw-reference { font-size:10px; padding:3px 6px; min-height:27px; margin:2px 0; color:#106b86; }
+.due-diligence-shell .rw-edit { padding:15px; margin:15px 0; border:1px solid #c6dfe7; background:#f5fbfc; }
+.due-diligence-shell .rw-edit label { display:block; margin-bottom:12px; font-size:12px; }
+.due-diligence-shell .rw-edit textarea { display:block; margin-top:7px; width:100%; min-height:110px; padding:10px; border:1px solid #c8dbe7; border-radius:7px; font:inherit; resize:vertical; }
+.due-diligence-shell .rw-edit p { color:var(--dd-muted); font-size:11px; margin-bottom:12px; }
+.due-diligence-shell .rw-manual-note { border-left:3px solid #6a9a8e; margin:14px 0; padding:10px 14px; background:#f3f8f6; font-size:12px; }
+.due-diligence-shell .rw-manual-note strong { font-weight:500; color:#3c7163; }
+.due-diligence-shell .rw-manual-note p { white-space:pre-wrap; margin-top:7px; line-height:1.9; }
+.due-diligence-shell .rw-manual-note small { color:var(--dd-muted); display:block; margin-top:8px; }
+.due-diligence-shell .rw-source { position:sticky; bottom:8px; margin-top:18px; max-height:55vh; overflow:auto; padding:16px 20px; background:#f6fbfc; border:1px solid #b8d9e4; }
+.due-diligence-shell .rw-source header { display:flex; justify-content:space-between; align-items:center; gap:15px; }
+.due-diligence-shell .rw-source h3 { font-size:15px; }
+.due-diligence-shell .rw-source p,.due-diligence-shell .rw-source small,.due-diligence-shell .rw-source details { font-size:11px; line-height:1.9; margin-top:8px; }
+.due-diligence-shell .rw-source blockquote { font-size:12px; margin:12px 0; border-left:2px solid #7dabb8; padding:7px 12px; white-space:pre-wrap; }
+.due-diligence-shell .rw-source pre { max-width:100%; font-size:10px; white-space:pre-wrap; overflow-wrap:anywhere; }
+.due-diligence-shell .rw-empty { display:flex; flex-direction:column; align-items:center; gap:10px; padding:38px 20px; color:var(--dd-muted); text-align:center; border:1px solid var(--dd-line); background:#fff; }
+.due-diligence-shell .rw-empty h3 { font-size:16px; color:var(--dd-ink); }
+.due-diligence-shell .rw-empty p { font-size:12px; }
+.due-diligence-shell .rw-calculation-appendix { margin:0 0 20px; border:1px solid #c7ddd1; border-radius:8px; background:#f8fcf9; overflow:hidden; }
+.due-diligence-shell .rw-calculation-appendix > summary { display:flex; justify-content:space-between; gap:14px; cursor:pointer; padding:16px 18px; font-size:13px; color:#2b5a47; }
+.due-diligence-shell .rw-calculation-appendix > summary span { font-size:10px; color:var(--dd-muted); font-weight:400; }
+.due-diligence-shell .rw-calculation-appendix[open] > summary { border-bottom:1px solid #d6e5dc; }
+.due-diligence-shell .rw-calculation-body { padding:16px 18px; }
+.due-diligence-shell .rw-calculation-notice { font-size:12px; line-height:1.9; color:#345e4c; padding:12px 14px; background:#edf6ee; border-left:3px solid #79a28a; }
+.due-diligence-shell .rw-calculation-help { color:var(--dd-muted); font-size:11px; line-height:1.9; margin:12px 0; }
+.due-diligence-shell .rw-calculation-scope { display:grid; grid-template-columns:1fr 1fr; gap:14px 22px; margin:18px 0; font-size:11px; line-height:1.85; }
+.due-diligence-shell .rw-calculation-scope dt { color:var(--dd-muted); margin-bottom:4px; }
+.due-diligence-shell .rw-calculation-scope dd { margin:0; color:var(--dd-ink); overflow-wrap:anywhere; white-space:pre-wrap; }
+.due-diligence-shell .rw-calculation-scope-basis { grid-column:1/-1; }
+.due-diligence-shell .rw-calculation-table { background:#fff; }
+.due-diligence-shell .rw-calculation-table table { min-width:700px; }
+.due-diligence-shell .rw-calculation-table th:nth-child(1) { width:23%; }
+.due-diligence-shell .rw-calculation-table th:nth-child(2) { width:23%; }
+.due-diligence-shell .rw-calculation-table th:nth-child(3) { width:29%; }
+.due-diligence-shell .rw-calculation-table th:nth-child(4) { width:25%; }
+.due-diligence-shell .rw-calculation-value { display:block; margin-top:7px; color:#285b45; font-variant-numeric:tabular-nums; }
+.due-diligence-shell .rw-calculation-basis { white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.85; margin-top:6px; }
+@media(max-width:1100px) { .due-diligence-shell .rw-toolbar { flex-direction:column; } .due-diligence-shell .rw-document { padding:16px; } }
+@media(max-width:650px) { .due-diligence-shell .rw-report-heading { flex-direction:column; } .due-diligence-shell .rw-chapter > header { align-items:flex-start; flex-direction:column; } .due-diligence-shell .rw-table-block > summary { align-items:flex-start; flex-direction:column; gap:3px; } .due-diligence-shell .rw-version-bar > label { flex-direction:column; align-items:stretch; min-width:0; width:100%; } .due-diligence-shell .rw-calculation-appendix > summary { flex-direction:column; gap:5px; } .due-diligence-shell .rw-calculation-scope { grid-template-columns:1fr; } .due-diligence-shell .rw-calculation-body { padding:14px; } }

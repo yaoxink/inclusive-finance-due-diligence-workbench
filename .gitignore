@@ -1,0 +1,9 @@
+.env
+.env.*
+data/
+frontend-dist/
+qa/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log

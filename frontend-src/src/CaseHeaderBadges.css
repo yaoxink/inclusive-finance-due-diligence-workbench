@@ -1,0 +1,13 @@
+/* case-level status badges on the right of the case header */
+.chb-badges{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end;margin-left:auto}
+.chb-badge{display:inline-flex;align-items:center;gap:6px;border:1px solid #d5e3ea;background:#fff;
+  border-radius:999px;padding:6px 13px;font-size:12px;color:#40606f;white-space:nowrap}
+.chb-badge svg{color:#0c769a}
+.chb-badge b{color:#123c4e;font-variant-numeric:tabular-nums}
+.chb-dot{color:#b9cbd6}
+.chb-credit{border-color:#bfe7d4;background:#eef8f2;color:#0f6d4d}
+.chb-credit svg{color:#1d9a6c}
+.chb-credit b{color:#0b5c42;font-size:14px}
+.chb-muted{color:#8ba0ad}
+.chb-muted svg{color:#a9bcc7}
+@media (max-width:1100px){.chb-badges{justify-content:flex-start;margin-left:0}}

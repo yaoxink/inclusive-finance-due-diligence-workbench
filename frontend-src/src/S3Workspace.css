@@ -1,0 +1,85 @@
+.due-diligence-shell .s3-workspace { display:flex; flex-direction:column; gap:17px; min-width:0; margin-bottom:22px; }
+.due-diligence-shell .s3-heading { display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+.due-diligence-shell .s3-heading h2 { font-size:19px; font-weight:550; }
+.due-diligence-shell .s3-heading h3 { font-size:13px; font-weight:600; }
+.due-diligence-shell .s3-heading p { margin-top:4px; color:var(--dd-muted); font-size:11px; line-height:1.8; }
+.due-diligence-shell .s3-heading > button { min-height:30px; font-size:11px; }
+.due-diligence-shell .s3-note { padding:11px 13px; border:1px solid #d9e7ef; border-radius:9px; background:#f3f9fc; color:#4d7389; font-size:11px; line-height:1.85; overflow-wrap:anywhere; }
+.due-diligence-shell .s3-note.warn { border-color:#eadcbe; background:#fffbf2; color:#80632c; }
+.due-diligence-shell .s3-note.error { border-color:#ebd1d2; background:#fff5f5; color:#9e474d; }
+.due-diligence-shell .s3-note.success { border-color:#cfe5da; background:#f2faf5; color:#28775b; }
+.due-diligence-shell .s3-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; align-items:start; }
+.due-diligence-shell .s3-card { min-width:0; padding:19px; border:1px solid #dfe9ef; border-radius:13px; background:#fffffff0; }
+.due-diligence-shell .s3-card > h3 { margin-bottom:13px; font-size:13px; font-weight:600; }
+.due-diligence-shell .s3-card .s3-heading { margin-bottom:14px; }
+.due-diligence-shell .s3-stack { display:flex; flex-direction:column; gap:13px; min-width:0; }
+.due-diligence-shell .s3-actions { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin-top:13px; }
+.due-diligence-shell .s3-actions button { min-height:31px; padding:6px 9px; font-size:11px; }
+.due-diligence-shell .s3-workspace label { display:block; min-width:0; color:#4d6b7f; font-size:11px; }
+.due-diligence-shell .s3-workspace input, .due-diligence-shell .s3-workspace select { font-size:12px; }
+.due-diligence-shell .s3-workspace textarea { display:block; resize:vertical; width:100%; min-height:96px; margin-top:7px; padding:10px 12px; border:1px solid #c8dbe7; border-radius:9px; background:#fff; color:var(--dd-ink); font-size:12px; line-height:1.85; font-family:inherit; outline:none; }
+.due-diligence-shell .s3-workspace textarea:focus { border-color:#278eaf; box-shadow:0 0 0 3px #08799b13; }
+.due-diligence-shell .s3-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:11px; }
+.due-diligence-shell .s3-form-grid .wide { grid-column:1/-1; }
+.due-diligence-shell .s3-checkbox { display:flex; align-items:flex-start; gap:8px; margin-top:12px; color:#4b6c80; font-size:11px; line-height:1.85; }
+.due-diligence-shell .s3-checkbox input { width:auto; flex-shrink:0; margin:4px 0 0; }
+.due-diligence-shell .s3-meta { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px 14px; margin:0; }
+.due-diligence-shell .s3-meta > div { min-width:0; }
+.due-diligence-shell .s3-meta dt { color:#6a8393; font-size:10px; }
+.due-diligence-shell .s3-meta dd { margin:3px 0 0; font-size:12px; overflow-wrap:anywhere; }
+.due-diligence-shell .s3-tag { display:inline-flex; align-items:center; padding:2px 7px; border:1px solid #dce8ef; border-radius:6px; color:#55798e; background:#f1f7fa; font-size:10px; line-height:1.7; }
+.due-diligence-shell .s3-tag.warn { color:#87682f; background:#fffbef; border-color:#e9dbb9; }
+.due-diligence-shell .s3-tag.good { color:#2b795c; background:#eef9f2; border-color:#cfe7d9; }
+.due-diligence-shell .s3-tags { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+.due-diligence-shell .s3-empty { padding:25px 15px; border:1px dashed #d6e5ed; border-radius:10px; background:#fafcfd; color:#6b8799; font-size:12px; line-height:1.9; text-align:center; }
+.due-diligence-shell .s3-history { margin-top:12px; border-top:1px solid #e5edf2; padding-top:12px; }
+.due-diligence-shell .s3-history > summary { cursor:pointer; color:#55798f; font-size:11px; }
+.due-diligence-shell .s3-history-list { display:flex; flex-direction:column; gap:9px; margin-top:12px; }
+.due-diligence-shell .s3-history-item { padding:10px 11px; border:1px solid #e1eaf0; border-radius:8px; color:#4f6f83; background:#f8fbfd; font-size:11px; line-height:1.85; overflow-wrap:anywhere; }
+.due-diligence-shell .s3-history-item strong { font-weight:550; }
+.due-diligence-shell .s3-history-item pre { margin:8px 0 0; white-space:pre-wrap; overflow-wrap:anywhere; font:10px/1.85 Consolas,"Microsoft YaHei",monospace; }
+.due-diligence-shell .s3-table-wrap { width:100%; overflow-x:auto; }
+.due-diligence-shell .s3-facts-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:4px 18px; padding:8px 14px 10px; }
+.due-diligence-shell .s3-fact-item { display:flex; flex-direction:column; gap:0; line-height:1.45; padding:3px 0; border-bottom:1px dashed #edf2f6; }
+.due-diligence-shell .s3-fact-item:last-child { border-bottom:0; }
+.due-diligence-shell .s3-fact-item span { color:#648195; font-size:11px; }
+.due-diligence-shell .s3-fact-item strong { font-size:13px; font-weight:600; overflow-wrap:anywhere; }
+.due-diligence-shell .s3-fact-item small { color:#8ba0ad; font-size:10px; }
+.due-diligence-shell .s3-table { width:100%; border-collapse:collapse; text-align:left; font-size:11px; }
+.due-diligence-shell .s3-table th { padding:9px 10px; border-bottom:1px solid #dce8ef; color:#648195; font-size:10px; font-weight:500; white-space:nowrap; }
+.due-diligence-shell .s3-table td { padding:11px 10px; border-bottom:1px solid #e8eff4; vertical-align:top; overflow-wrap:anywhere; min-width:90px; }
+.due-diligence-shell .s3-table td:first-child { min-width:135px; }
+.due-diligence-shell .s3-table td small { display:block; margin-top:3px; color:#738b9b; font-size:10px; line-height:1.75; }
+.due-diligence-shell .s3-status-details { margin-top:8px; color:#6a8393; font-size:10px; line-height:1.8; }
+.due-diligence-shell .s3-status-details > summary { cursor:pointer; }
+.due-diligence-shell .s3-status-details > p { margin-top:6px; }
+.due-diligence-shell .s3-groups { display:flex; flex-direction:column; gap:10px; }
+.due-diligence-shell .s3-group { border:1px solid #dfe9f0; border-radius:10px; background:#fbfdfe; }
+.due-diligence-shell .s3-group > summary { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 13px; cursor:pointer; color:#456a80; font-size:12px; }
+.due-diligence-shell .s3-group > summary span { color:#7a91a0; font-size:10px; }
+.due-diligence-shell .s3-group-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 20px; padding:0 13px 10px; }
+.due-diligence-shell .s3-field { min-width:0; padding:10px 0; border-top:1px solid #e4edf3; }
+.due-diligence-shell .s3-field strong { display:block; font-size:11px; font-weight:550; color:#41677d; }
+.due-diligence-shell .s3-field p, .due-diligence-shell .s3-field small { display:block; color:#728b9c; font-size:10px; line-height:1.8; overflow-wrap:anywhere; }
+.due-diligence-shell .s3-interview-grid { display:grid; grid-template-columns:265px minmax(0,1fr); gap:17px; align-items:start; }
+.due-diligence-shell .s3-question-list { display:flex; flex-direction:column; gap:8px; margin-top:13px; max-height:670px; overflow-y:auto; }
+.due-diligence-shell .s3-question-list > button { display:block; width:100%; padding:11px; border-color:#e0eaf0; border-radius:9px; text-align:left; background:#fafcfd; }
+.due-diligence-shell .s3-question-list > button.selected { border-color:#a9d3e2; box-shadow:inset 3px 0 #2b92ae; background:#f0f9fc; }
+.due-diligence-shell .s3-question-list strong { display:block; font-size:12px; font-weight:500; line-height:1.8; }
+.due-diligence-shell .s3-question-list small { display:block; color:#728c9e; font-size:10px; line-height:1.8; margin-top:6px; }
+.due-diligence-shell .s3-question-list .s3-tag { margin-top:7px; }
+.due-diligence-shell .s3-source-list, .due-diligence-shell .s3-fact-list { display:flex; flex-direction:column; gap:12px; margin-top:13px; }
+.due-diligence-shell .s3-source, .due-diligence-shell .s3-fact { min-width:0; padding:13px; border:1px solid #dfe9f0; border-radius:10px; background:#fbfdfe; }
+.due-diligence-shell .s3-source.selected { border-color:#a5cfdf; background:#f1f9fc; }
+.due-diligence-shell .s3-source > header, .due-diligence-shell .s3-fact > header { display:flex; justify-content:space-between; gap:9px; flex-wrap:wrap; align-items:center; }
+.due-diligence-shell .s3-source > header strong, .due-diligence-shell .s3-fact > header strong { font-size:12px; font-weight:550; }
+.due-diligence-shell .s3-source blockquote, .due-diligence-shell .s3-fact blockquote { margin:10px 0; padding:7px 0 7px 11px; border-left:3px solid #c7deea; color:#355c73; font-size:12px; line-height:1.95; white-space:pre-wrap; overflow-wrap:anywhere; }
+.due-diligence-shell .s3-source > p, .due-diligence-shell .s3-fact > p { color:#668295; font-size:10px; line-height:1.85; overflow-wrap:anywhere; }
+.due-diligence-shell .s3-conflict { padding:13px; border:1px solid #ebd2b7; border-radius:10px; background:#fffaf1; }
+.due-diligence-shell .s3-conflict h4 { margin:0 0 9px; color:#856030; font-size:12px; font-weight:550; }
+.due-diligence-shell .s3-conflict-items { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.due-diligence-shell .s3-conflict-items > div { padding:10px; border:1px solid #ebdfcc; border-radius:8px; background:#ffffffa6; color:#735c3b; font-size:11px; line-height:1.85; overflow-wrap:anywhere; }
+.due-diligence-shell .s3-rule-caption { margin-top:10px!important; color:#718899; font-size:10px; line-height:1.8; }
+@media (max-width:1200px) { .due-diligence-shell .s3-interview-grid { grid-template-columns:230px minmax(0,1fr); } .due-diligence-shell .s3-grid { grid-template-columns:1fr; } }
+@media (max-width:850px) { .due-diligence-shell .s3-interview-grid { grid-template-columns:1fr; } .due-diligence-shell .s3-question-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); max-height:360px; } .due-diligence-shell .s3-group-list { grid-template-columns:1fr; } }
+@media (max-width:570px) { .due-diligence-shell .s3-card { padding:15px; } .due-diligence-shell .s3-form-grid, .due-diligence-shell .s3-meta, .due-diligence-shell .s3-conflict-items, .due-diligence-shell .s3-question-list { grid-template-columns:1fr; } .due-diligence-shell .s3-question-list { max-height:300px; } }

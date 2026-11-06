@@ -1,0 +1,22 @@
+.ci-card{background:#fff;border:1px solid var(--dd-line,#d8e0de);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.ci-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.ci-head h3{margin:0;font-size:16px;color:var(--dd-ink,#20302c)}
+.ci-head p{margin:2px 0 0;font-size:12px;color:var(--dd-muted,#5b6b68)}
+.ci-head button{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--dd-line,#d8e0de);background:#fff;
+  border-radius:8px;padding:6px 11px;font-size:13px;cursor:pointer;color:var(--dd-ink,#20302c)}
+.ci-head button:hover{border-color:var(--dd-accent,#176B62);color:var(--dd-accent,#176B62)}
+.ci-error{display:flex;align-items:center;gap:6px;margin:0;font-size:13px;color:#8a1f18;background:#fdecea;border-radius:8px;padding:7px 10px}
+.ci-notice{display:flex;align-items:center;gap:6px;margin:0;font-size:13px;color:#0f4a41;background:#e9f5f0;border-radius:8px;padding:7px 10px}
+.ci-empty{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--dd-muted,#5b6b68)}
+.ci-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px 18px;margin:0}
+.ci-grid dt{font-size:12px;color:var(--dd-muted,#5b6b68)}
+.ci-grid dd{margin:2px 0 0;font-size:14px;color:var(--dd-ink,#20302c)}
+.ci-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.ci-form label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--dd-muted,#5b6b68)}
+.ci-form label em{font-style:normal;color:#8a1f18;margin-left:4px}
+.ci-form input{border:1px solid var(--dd-line,#d8e0de);border-radius:7px;padding:7px 9px;font-size:13px}
+.ci-actions{display:flex;align-items:center;gap:10px;grid-column:1/-1}
+.ci-actions button{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--dd-accent,#176B62);background:var(--dd-accent,#176B62);
+  color:#fff;border-radius:8px;padding:7px 14px;font-size:13px;cursor:pointer}
+.ci-actions button:disabled{opacity:.55;cursor:not-allowed}
+.ci-actions small{font-size:12px;color:var(--dd-muted,#5b6b68)}

@@ -1,0 +1,6 @@
+# Versions used by the verified local workbench. ASR has its own runtime.
+fastapi==0.157.0
+uvicorn==0.54.0
+pydantic==2.14.1
+-r requirements-s3.txt
+-r requirements-reports.txt
