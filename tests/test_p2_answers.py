@@ -48,17 +48,17 @@ def raises(env, code, fn, *args, **kwargs):
 def test_customer_info_create_revise_conflict_and_history(env):
     case = make_case(env)
     first = env.answers.update_customer_info(case, {
-        'fields': {'customer_name': '张三', 'id_type': '居民身份证', 'id_number': '510123199001011234',
-                   'phone': '13800000000'},
+        'fields': {'customer_name': '张三', 'id_type': '居民身份证', 'id_number': 'TEST-ID-001',
+                   'phone': 'TEST-PHONE-A'},
         'expected_revision': 0, 'actor': 'manager_a'})
     assert first['revision'] == 1 and first['fields']['customer_name'] == '张三'
     # stale revision must not overwrite
     raises(env, 'revision_conflict', env.answers.update_customer_info, case, {
-        'fields': {'customer_name': '李四', 'id_type': '居民身份证', 'id_number': '510123199001011234'},
+        'fields': {'customer_name': '李四', 'id_type': '居民身份证', 'id_number': 'TEST-ID-001'},
         'expected_revision': 0, 'actor': 'manager_b'})
     second = env.answers.update_customer_info(case, {
-        'fields': {'customer_name': '张三丰', 'id_type': '居民身份证', 'id_number': '510123199001011234',
-                   'phone': '13800000001'},
+        'fields': {'customer_name': '张三丰', 'id_type': '居民身份证', 'id_number': 'TEST-ID-001',
+                   'phone': 'TEST-PHONE-B'},
         'expected_revision': 1, 'actor': 'manager_b'})
     assert second['revision'] == 2 and second['changed_keys'] == ['customer_name', 'phone']
     view = env.answers.customer_info(case)
@@ -66,11 +66,11 @@ def test_customer_info_create_revise_conflict_and_history(env):
     assert view['customer_info']['fields']['customer_name'] == '张三丰'
     # required fields cannot be dropped silently
     raises(env, 'missing_customer_field', env.answers.update_customer_info, case, {
-        'fields': {'customer_name': '', 'id_type': '居民身份证', 'id_number': '510123199001011234'},
+        'fields': {'customer_name': '', 'id_type': '居民身份证', 'id_number': 'TEST-ID-001'},
         'expected_revision': 2})
     # unknown field rejected
     raises(env, 'invalid_customer_fields', env.answers.update_customer_info, case, {
-        'fields': {'customer_name': '王五', 'id_type': '居民身份证', 'id_number': '510123199001011234', 'secret': 'x'},
+        'fields': {'customer_name': '王五', 'id_type': '居民身份证', 'id_number': 'TEST-ID-001', 'secret': 'x'},
         'expected_revision': 2})
     # cross-case read rejected
     raises(env, 'case_not_found', env.answers.customer_info, 'case_does_not_exist')
